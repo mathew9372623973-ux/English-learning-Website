@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluent English Academy</title>
 
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      margin: auto;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, select {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Fluent English Academy</h1>
+<p>Learn English with confidence 🚀</p>
+
+<form onsubmit="submitForm(event)">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <input type="tel" id="phone" placeholder="Your Phone" required>
+
+  <select id="plan">
+    <option>Basic Plan</option>
+    <option>Standard Plan</option>
+    <option>Premium Plan</option>
+  </select>
+
+  <button type="submit">Enroll Now</button>
+</form>
+
+<script>
+function submitForm(e) {
+  e.preventDefault();
+
+  const userData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    plan: document.getElementById("plan").value
+  };
+
+  console.log(userData);
+  alert("✅ Enrollment Successful! Payment coming next.");
+}
+</script>
+
+</body>
+</html>
