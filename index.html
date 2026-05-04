@@ -1,36 +1,89 @@
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluent English Academy</title>
 
-<h1>Fluent English Academy</h1>
-<p>Learn English with confidence 🚀</p>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+      padding: 20px;
+    }
 
-<form>
-  <input type="text" placeholder="Your Name" required>
-  <input type="email" placeholder="Your Email" required>
-  <input type="tel" placeholder="Your Phone" required>
+    h1 {
+      color: #333;
+      margin-bottom: 5px;
+    }
 
-  <select>
-    <option>Basic Plan</option>
-    <option>Standard Plan</option>
-    <option>Premium Plan</option>
-  </select>
-</form>
+    p {
+      font-size: 18px;
+      color: #555;
+    }
 
-<h2 style="text-align:center;">Enroll Now</h2>
+    form {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 
-<div style="text-align:center; margin-top: 20px;">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT85YG0wyuHuLQeCtIPXAumTO-B3kcBPP-SnrRGgf_b-fyyA/viewform" target="_blank">
-    <button style="
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .enroll-btn {
+      display: inline-block;
       background-color: #4CAF50;
       color: white;
       padding: 15px 30px;
       font-size: 18px;
-      border: none;
       border-radius: 8px;
-      cursor: pointer;
-    ">
-      Enroll Now
-    </button>
+      text-decoration: none;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+
+    .enroll-btn:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Fluent English Academy</h1>
+  <p>Speak English Fluently with Expert Guidance 🚀</p>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="tel" placeholder="Your Phone" required>
+
+    <select>
+      <option>Basic Plan</option>
+      <option>Standard Plan</option>
+      <option>Premium Plan</option>
+    </select>
+  </form>
+
+  <h2>Enroll Now</h2>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT85YG0wyuHuLQeCtIPXAumTO-B3kcBPP-SnrRGgf_b-fyyA/viewform"
+     target="_blank"
+     class="enroll-btn">
+    Enroll Now
   </a>
-</div>
 
 </body>
+</html>
