@@ -1,82 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fluent English Academy</title>
-
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      background: #f4f4f4;
-      padding: 20px;
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    form {
-      background: white;
-      padding: 20px;
-      margin: auto;
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    input, select {
-      width: 90%;
-      padding: 10px;
-      margin: 10px 0;
-    }
-
-    button {
-      padding: 10px 20px;
-      background: #007bff;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #0056b3;
-    }
-  </style>
-</head>
-
 <body>
 
 <h1>Fluent English Academy</h1>
 <p>Learn English with confidence 🚀</p>
 
-<form onsubmit="submitForm(event)">
-  <input type="text" id="name" placeholder="Your Name" required>
-  <input type="email" id="email" placeholder="Your Email" required>
-  <input type="tel" id="phone" placeholder="Your Phone" required>
+<form>
+  <input type="text" placeholder="Your Name" required>
+  <input type="email" placeholder="Your Email" required>
+  <input type="tel" placeholder="Your Phone" required>
 
-  <select id="plan">
+  <select>
     <option>Basic Plan</option>
     <option>Standard Plan</option>
     <option>Premium Plan</option>
   </select>
-
-  
+</form>
 
 <h2 style="text-align:center;">Enroll Now</h2>
 
-<div style="max-width: 700px; margin: auto;">
-  <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLSdT85YG0wyuHuLQeCtlPXAumTO-B3kcBPP-SnrGRgf_b-fyyA/viewform"
-    width="100%" 
-    height="1100" 
-    frameborder="0">
-  </iframe>
+<div style="text-align:center; margin-top: 20px;">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT85YG0wyuHuLQeCtIPXAumTO-B3kcBPP-SnrRGgf_b-fyyA/viewform" target="_blank">
+    <button style="
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    ">
+      Enroll Now
+    </button>
+  </a>
 </div>
 
-
-
-
 </body>
-</html>
