@@ -8,28 +8,33 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
       background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
       padding: 20px;
     }
 
     h1 {
       color: #333;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 18px;
-      color: #555;
+      color: #666;
+      margin-bottom: 30px;
     }
 
-    form {
+    .form-box {
       background: white;
-      padding: 20px;
-      margin: 20px auto;
-      width: 320px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     input, select {
@@ -38,52 +43,58 @@
       margin: 10px 0;
       border-radius: 6px;
       border: 1px solid #ccc;
-      font-size: 14px;
+      font-size: 16px;
     }
 
-    .enroll-btn {
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .btn {
       display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
       background-color: #4CAF50;
       color: white;
-      padding: 15px 30px;
       font-size: 18px;
       border-radius: 8px;
       text-decoration: none;
       transition: 0.3s;
-      margin-top: 15px;
     }
 
-    .enroll-btn:hover {
-      background-color: #45a049;
-      transform: scale(1.05);
+    .btn:hover {
+      background-color: #3e8e41;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Fluent English Academy</h1>
-  <p>Speak English Fluently with Expert Guidance 🚀</p>
+  <div class="container">
+    
+    <h1>Fluent English Academy</h1>
+    <p>Speak English Fluently with Expert Guidance 🚀</p>
 
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <input type="tel" placeholder="Your Phone" required>
+    <div class="form-box">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone" required>
 
-    <select>
-      <option>Basic Plan</option>
-      <option>Standard Plan</option>
-      <option>Premium Plan</option>
-    </select>
-  </form>
+      <select>
+        <option>Basic Plan</option>
+        <option>Standard Plan</option>
+        <option>Premium Plan</option>
+      </select>
+    </div>
 
-  <h2>Enroll Now</h2>
+    <h2>Enroll Now</h2>
 
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT85YG0wyuHuLQeCtIPXAumTO-B3kcBPP-SnrRGgf_b-fyyA/viewform"
-     target="_blank"
-     class="enroll-btn">
-    Enroll Now
-  </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT85YG0wyuHuLQeCtlPXAumTO-B3kcBPP-SnrGRgf_b-fyyA/viewform" target="_blank" class="btn">
+      Enroll Now
+    </a>
+
+  </div>
 
 </body>
 </html>
